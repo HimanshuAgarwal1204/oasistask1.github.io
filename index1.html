@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgb(253, 0, 0),rgba(0,0,0,0.2)),url("Background.jpg");
+            background-size: cover;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            color: rgb(19, 1, 1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 1px;
+
+        }
+        .Menu a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-size: 20px;
+            position: bottom;
+        }
+        .Menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid rgb(255, 0, 0);
+            transition: 0.4s linear;
+        }
+
+        .Menu a:hover:before{
+            width: 90%;
+        }
+        
+        .Register a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            font-size: 20px;
+            background: rgb(255, 0, 0);
+            border-radius: 5px;
+            transition: 0.4s linear;
+        }
+
+        .Register a:hover{
+            background: transparent;
+            border: 1px solid red;
+        }
+        .h-txt{
+            background-color: rgb(255, 0, 0);
+            max-width: 100%;
+            position: bottom;
+            text-align: center;
+            color: rgb(20, 19, 19);
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        
+        .h-txt a{
+            text-decoration: none;
+            background: rgb(226, 13, 9);
+            color: rgb(0, 0, 0);
+            padding: 15px,25px;
+            letter-spacing: 5px;
+            transition: 0.4s linear;
+        }
+        .h-txt a:hover{
+        background: transparent;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <b>UMESH SAREES</b>
+            </div>
+            <div class="Menu">
+                <a href="category.html"><b>CATEGORY</b></a>
+                <a href="bestselling.html"><b>BEST SELLING ITEMS😍</b></a>
+                <a href="#"><b>MOST LOVED STYLES</b></a>
+                <a href="#"><b>FABRICS</b></a>
+                <a href="#""><b>CONTACT US 📞</b></a>
+        </div>
+        <div class="Register">
+                <a href="#"><b>ORDER NOW</b></a>
+        </div>
+    </nav>
+    <img src="TASK1.jpg" alt="saree" style="vertical-align:middle" width="100%" height="90%">
+</header>   
+<footer>
+    <div class="h-txt">
+        <span><b><h1> CELEBRATE THE FESTIVAL🎊 WITH MOST TRUSTED BRAND</h1></b></span>
+        <br>
+    </div>
+</footer>
+</body>
+</html>
